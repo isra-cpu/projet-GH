@@ -9,6 +9,8 @@ document.getElementById("addBookForm").addEventListener("submit", function (e) {
   const li = document.createElement("li");
   li.textContent = 'Titre: ${title} — Auteur: ${author}';
   document.getElementById("books").appendChild(li);
+
+  // 2) Ajouter aux populaires
   const card = document.createElement("div");
   card.className = "book-card";
   card.innerHTML = '<h3>${title}</h3><p>${author}</p>';
